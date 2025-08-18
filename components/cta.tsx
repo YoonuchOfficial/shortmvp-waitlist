@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import TextBlur from "@/components/ui/text-blur";
 import AnimatedShinyText from "@/components/ui/shimmer-text";
 import { containerVariants, itemVariants } from "@/lib/animation-variants";
+import { Badge } from "./ui/badge";
 
 export default function CTA() {
   return (
@@ -10,16 +11,6 @@ export default function CTA() {
       variants={containerVariants}
       initial="hidden"
       animate="visible">
-      <motion.div variants={itemVariants}>
-        <div className="flex items-center justify-center">
-          <div className="flex w-fit items-center justify-center rounded-full bg-muted/80 text-center">
-            <AnimatedShinyText className="px-4 py-1">
-              <span>Coming soon!</span>
-            </AnimatedShinyText>
-          </div>
-        </div>
-      </motion.div>
-
       <motion.img
         src="/logo.svg"
         alt="logo"
@@ -30,14 +21,14 @@ export default function CTA() {
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
-          text="A Simple Next.js Waitlist Template with Notion as CMS"
+          text="Tired of building products nobody wants?"
         />
       </motion.div>
 
       <motion.div variants={itemVariants}>
         <TextBlur
           className="mx-auto max-w-[27rem] pt-1.5 text-center text-base text-zinc-300 sm:text-lg"
-          text="Join the waitlist to get early access of the product and recieve updates on the progress!"
+          text="Join the waitlist to get early access of ShortMVP"
           duration={0.8}
         />
       </motion.div>
