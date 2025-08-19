@@ -8,6 +8,9 @@ import Logos from "@/components/logos";
 import Particles from "@/components/ui/particles";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { motion } from "framer-motion";
+import { itemVariants } from "@/lib/animation-variants";
+import TextBlur from "@/components/ui/text-blur";
 
 export default function Home() {
   const [name, setName] = useState<string>("");
@@ -120,6 +123,29 @@ export default function Home() {
           handleSubmit={handleSubmit}
           loading={loading}
         />
+        <motion.div variants={itemVariants}>
+          <div className="relative my-20 border border-blue-800 px-8 pb-8">
+            <div className="absolute -top-3 left-0 right-0 mx-auto w-fit bg-slate-900 px-4 text-center">
+              Please think differently, Step outside this box
+            </div>
+            <TextBlur
+              className="mt-8 text-center text-2xl tracking-tighter sm:text-3xl"
+              text="42% of startups fail. Yours could be next — not from bad ideas, but from no market need."
+            />
+            <TextBlur
+              className="mt-1 text-center text-sm tracking-tighter"
+              text="- forumvc.com -"
+            />
+            <TextBlur
+              className="mt-8 text-center text-2xl tracking-tighter sm:text-3xl"
+              text="If you're not embarrassed by your first product release, you've released it too late."
+            />
+            <TextBlur
+              className="mt-1 text-center text-sm tracking-tighter"
+              text="- Reid Hoffman (Co-Founder of LinkedIn) via businessinsider.com -"
+            />
+          </div>
+        </motion.div>
       </section>
     </main>
   );

@@ -20,18 +20,19 @@ export default function CTA() {
 
       <motion.div variants={itemVariants}>
         <TextBlur
-          className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
+          className="text-center text-3xl font-bold tracking-tighter sm:text-5xl"
           text="Tired of building products nobody wants?"
         />
       </motion.div>
 
       <motion.div variants={itemVariants}>
         <TextBlur
-          className="mx-auto max-w-[27rem] pt-1.5 text-center text-base text-zinc-300 sm:text-lg"
+          className="mx-auto max-w-[27rem] pt-1.5 text-center text-base text-slate-300 sm:text-lg"
           text="Join the waitlist to get early access of ShortMVP"
           duration={0.8}
         />
       </motion.div>
+      
     </motion.div>
   );
 }

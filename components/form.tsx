@@ -59,13 +59,17 @@ export default function Form({
       </motion.div>
       <motion.div
         variants={itemVariants}
-        className="mt-4 flex w-full items-center justify-center gap-1 text-muted-foreground">
+        className="mt-4 flex w-full flex-wrap items-center justify-center gap-1 text-muted-foreground">
         <p>For any queries, reach out at </p>
         <Link
-          href="https://x.com/getshortmvp"
+          href="https://x.com/shortmvp_ai"
           rel="noopener noreferrer"
-          target="_blank">
-          <FaXTwitter className="h-4 w-4 transition-all duration-200 ease-linear hover:text-blue-500" />
+          target="_blank"
+          className="flex flex-nowrap items-center gap-1">
+          <FaXTwitter className="h-4 w-4 text-blue-500 transition-all duration-200 ease-linear" />
+          <div className="text-blue-500 transition-all duration-200 ease-linear">
+            @shortmvp_ai
+          </div>
         </Link>
       </motion.div>
     </motion.div>
