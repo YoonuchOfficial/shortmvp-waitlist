@@ -128,6 +128,20 @@ export default function Home() {
             <div className="absolute -top-3 left-0 right-0 mx-auto w-fit bg-slate-900 px-4 text-center">
               Please think differently, Step outside this box
             </div>
+            <div className="relative my-12 h-24 w-full">
+              <div className="relative mx-auto h-24 w-[1px] bg-blue-800"></div>
+              <div className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform bg-slate-900 px-4 py-1 text-center">
+                Pre-launch
+              </div>
+            </div>
+            <TextBlur
+              className="mt-8 text-center text-2xl tracking-tighter sm:text-3xl"
+              text="Don't fool yourself into thinking users will want your product if you can't even define its value proposition clearly."
+            />
+            <TextBlur
+              className="mt-1 text-center text-sm tracking-tighter"
+              text="- ShortMVP - Of course, we've failed too. -"
+            />
             <TextBlur
               className="mt-8 text-center text-2xl tracking-tighter sm:text-3xl"
               text="42% of startups fail. Yours could be next — not from bad ideas, but from no market need."
@@ -135,6 +149,20 @@ export default function Home() {
             <TextBlur
               className="mt-1 text-center text-sm tracking-tighter"
               text="- forumvc.com -"
+            />
+            <div className="relative my-12 h-24 w-full">
+              <div className="relative mx-auto h-24 w-[1px] bg-blue-800"></div>
+              <div className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform bg-slate-900 px-4 py-1 text-center">
+                Under development (MVP)
+              </div>
+            </div>
+            <TextBlur
+              className="mt-8 text-center text-2xl tracking-tighter sm:text-3xl"
+              text="Plenty of time to burn? You're still building while paying customers don't even know your product exists."
+            />
+            <TextBlur
+              className="mt-1 text-center text-sm tracking-tighter"
+              text="- ShortMVP - Of course, we've wasted precious time. -"
             />
             <TextBlur
               className="mt-8 text-center text-2xl tracking-tighter sm:text-3xl"
@@ -144,7 +172,34 @@ export default function Home() {
               className="mt-1 text-center text-sm tracking-tighter"
               text="- Reid Hoffman (Co-Founder of LinkedIn) via businessinsider.com -"
             />
+            <div className="relative my-12 h-24 w-full">
+              <div className="relative mx-auto h-24 w-[1px] bg-blue-800"></div>
+              <div className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform bg-slate-900 px-4 py-1 text-center">
+                Post-launch
+              </div>
+            </div>
+            <TextBlur
+              className="mt-8 text-center text-2xl tracking-tighter sm:text-3xl"
+              text="Everyone wants their first $1. The real question: does your product solve a problem important enough for customers to pay?"
+            />
+            <TextBlur
+              className="mt-1 text-center text-sm tracking-tighter"
+              text="- Reid Hoffman (Co-Founder of LinkedIn) via businessinsider.com -"
+            />
+            <TextBlur
+              className="mt-8 text-center text-2xl tracking-tighter sm:text-3xl"
+              text="Your customers aren't bots that can scan for your product. Without clear, systematic marketing, and outreach, even the best product may remain unknown."
+            />
+            <TextBlur
+              className="mb-12 mt-1 text-center text-sm tracking-tighter"
+              text="- ShortMVP - We've been there, launching a product and hopelessly waiting for customers to show up. -"
+            />
           </div>
+
+          <TextBlur
+            className="mx-auto mb-24 mt-8 max-w-2xl text-center text-2xl font-bold tracking-tighter text-yellow-500 sm:text-5xl"
+            text="What are you still lost in when building your product today? Isn't it time to start building systematically?"
+          />
         </motion.div>
       </section>
     </main>
