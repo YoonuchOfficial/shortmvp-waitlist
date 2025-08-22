@@ -184,7 +184,7 @@ export default function Home() {
             />
             <TextBlur
               className="mt-1 text-center text-sm tracking-tighter"
-              text="- Reid Hoffman (Co-Founder of LinkedIn) via businessinsider.com -"
+              text="- ShortMVP -"
             />
             <TextBlur
               className="mt-8 text-center text-2xl tracking-tighter sm:text-3xl"
